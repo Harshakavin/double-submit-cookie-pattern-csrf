@@ -2,7 +2,7 @@
 if(isset($_POST['username'],$_POST['password'])){
 	$uname = $_POST['username'];
 	$pwd = $_POST['password'];
-	if($uname == 'admin' && $pwd == 'ssd'){
+	if($uname == 'admin' && $pwd == 'ssd2'){
 		echo '<h1>Successfully logged in</h1>';
 		session_start();
 		$_SESSION['token'] = base64_encode(openssl_random_pseudo_bytes(32));
